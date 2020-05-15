@@ -9,6 +9,8 @@ then
     sudo mv Forensic2.txt /home/cyberpatriot/Desktop
     sudo mv Forensic3.txt /home/cyberpatriot/Desktop
     sudo mv ScoringReport.txt /home/cyberpatriot/Desktop
-    sudo chmod 777 Engine.sh
+    sudo mkdir /etc/Cyber
+    sudo mv gain.wav /etc/Cyber
+    sudo chmod 777 /home/cyberpatriot/Desktop/Engine.sh
     sudo crontab -l | { cat; echo "* * * * * sudo bash /home/cyberpatriot/Desktop/Engine.sh"; } | crontab -
 fi
