@@ -11,9 +11,7 @@ then
   aplay /etc/Cyber/gain.wav
 fi
 
-if sudo cat /home/cyberpatriot/Desktop/Forensic2.txt |
-  grep -xqFe "DBiggers"
-then
+if grep -xqFe "DBiggers" /home/cyberpatriot/Desktop/Forensic2.txt; then
   echo "You have answered Forensic Question 2 correctly." >> /home/cyberpatriot/Desktop/ScoringReport.txt
   aplay /etc/Cyber/gain.wav
 fi
