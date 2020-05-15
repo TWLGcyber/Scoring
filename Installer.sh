@@ -13,4 +13,6 @@ then
     sudo mv gain.wav /etc/Cyber
     sudo chmod 777 /home/cyberpatriot/Desktop/Engine.sh
     sudo crontab -l | { cat; echo "* * * * * sudo bash /home/cyberpatriot/Desktop/Engine.sh"; } | crontab -
+    #This next part deletes all of the files
+    sudo rm -rf /home/cyberpatriot/Scoring
 fi
