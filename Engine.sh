@@ -22,13 +22,6 @@ if grep -F "DBiggers" /home/cyberpatriot/Desktop/Forensic2.txt; then
   fi
 fi
 
-if sudo cat /home/cyberpatriot/Desktop/Forensic3.txt |
-  grep -F "Rainbow, you suck at siege!"
-then
-  echo "You have answered Forensic Question 3 correctly." >> /home/cyberpatriot/Desktop/ScoringReport.txt
-  aplay /etc/Cyber/gain.wav
-fi
-
 if grep -F "Rainbow, you suck at siege!" /home/cyberpatriot/Desktop/Forensic3.txt; then
   if grep -F "You have answered Forensic Question 3 correctly." /home/cyberpatriot/Desktop/ScoringReport.txt; then
     ls
