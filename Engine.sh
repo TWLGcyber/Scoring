@@ -48,3 +48,12 @@ if grep -F "ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1" /etc/pam.d/common-passw
   aplay /etc/Cyber/gain.wav
   fi
 fi
+
+if sudo ufw status | grep "Status: active" > /dev/null; then
+  if grep -F "You have correctly enabled the firewall." /home/cyberpatriot/Desktop/ScoringReport.txt; then
+    ls
+  else
+  echo "You have correctly enabled the firewall." >> /home/cyberpatriot/Desktop/ScoringReport.txt
+  aplay /etc/Cyber/gain.wav
+  fi
+fi
