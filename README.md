@@ -1,3 +1,3 @@
 # Scoring
 
-Cron job: * * * * * /bin/bash /home/cyberpatriot/Desktop/Engine.sh
+Cron job: * * * * * /bin/bash /etc/Cyber/Engine.sh
