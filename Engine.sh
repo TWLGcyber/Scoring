@@ -39,3 +39,12 @@ if grep -F "allow-guest=false" /etc/lightdm/lightdm.conf.d/*.conf; then
   aplay /etc/Cyber/gain.wav
   fi
 fi
+
+if grep -F "ucredit=-1 lcredit=-1 dcredit=-1 ocredit=-1" /etc/pam.d/common-password; then
+  if grep -F "You have answered correctly configured password complexity." /home/cyberpatriot/Desktop/ScoringReport.txt; then
+    ls
+  else
+  echo "You have answered correctly configured password complexity." >> /home/cyberpatriot/Desktop/ScoringReport.txt
+  aplay /etc/Cyber/gain.wav
+  fi
+fi
