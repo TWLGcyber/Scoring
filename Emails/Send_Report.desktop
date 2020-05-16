@@ -1,0 +1,7 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Send Email
+Comment=Send Email
+Exec=gnome-terminal -e /etc/Sendmail.sh
+Icon=utilities-terminal
+Type=Application
