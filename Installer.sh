@@ -7,13 +7,6 @@ then
     sudo bash /home/cyberpatriot/Scoring/Vulns/Configuration.sh
 fi
 
-read -p "Would you like to have the option to email the Scoring Report to the coach?" -n 1 -r
-if [[ ! $REPLY =~ ^[Nn]$ ]]
-then
-    sudo chmod 777 /home/cyberpatriot/Scoring/Emails/install.sh
-    sudo bash /home/cyberpatriot/Scoring/Emails/install.sh
-fi
-
 read -p "Would you like to install the Scoring Engine?" -n 1 -r
 if [[ ! $REPLY =~ ^[Nn]$ ]]
 then
