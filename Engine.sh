@@ -57,3 +57,23 @@ if sudo ufw status | grep "Status: active" > /dev/null; then
   aplay /etc/Cyber/gain.wav
   fi
 fi
+
+DBiggers=$(groups DBiggers)
+if [[ $DBiggers == *"sudo"* ]]; then
+    if grep -F "DBiggers is an Admin." /home/cyberpatriot/Desktop/ScoringReport.txt; then
+    ls
+  else
+  echo "DBiggers is an Admin." >> /home/cyberpatriot/Desktop/ScoringReport.txt
+  aplay /etc/Cyber/gain.wav
+  fi
+fi
+
+Sam=$(groups sam)
+if [[ $Sam != *"sudo"* ]]; then
+    if grep -F "Sam is not an Admin." /home/cyberpatriot/Desktop/ScoringReport.txt; then
+    ls
+  else
+  echo "Sam is not an Admin." >> /home/cyberpatriot/Desktop/ScoringReport.txt
+  aplay /etc/Cyber/gain.wav
+  fi
+fi
